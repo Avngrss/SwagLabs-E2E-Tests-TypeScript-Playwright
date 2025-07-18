@@ -1,0 +1,11 @@
+# Запуск тестов
+npm run test
+
+# Генерация отчета
+npm run allure:generate
+
+# Открытие отчета
+npm run allure:open
+
+# Или одной командой:
+npm run test:with-report
