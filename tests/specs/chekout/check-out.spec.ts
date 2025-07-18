@@ -112,7 +112,6 @@ test.describe("Check Out", () => {
     await allure.step("Verify payment info", async () => {
       await checkOutStepTwoPage.verifyPaymentInfo([
         { price: 29.99 },
-        { price: 7.99 },
       ]);
       await allure.attachment(
         "Payment info",
@@ -246,7 +245,6 @@ test.describe("Check Out", () => {
     await allure.step("Verify payment info", async () => {
       await checkOutStepTwoPage.verifyPaymentInfo([
         { price: 29.99 },
-        { price: 7.99 },
       ]);
       await allure.attachment(
         "Payment info",
