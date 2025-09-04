@@ -1,40 +1,35 @@
-Краткое описание:
-Профессиональный набор end-to-end (E2E) тестов для демо-сайта электронной коммерции Swag Labs, написанный на TypeScript с использованием современного и мощного фреймворка Playwright. Проект демонстрирует лучшие практики автоматизации тестирования: надежные селекторы, встроенные ожидания, параллельное выполнение и работу с различными браузерами.
+# Swag Labs End-to-End Test Automation
 
-Ключевые технологии и инструменты:
+A comprehensive and robust test automation suite for the Swag Labs demo web application. This project implements a full suite of end-to-end (E2E) tests to validate critical user journeys, ensuring high application quality through reliable, fast, and maintainable automated checks.
 
-Язык: TypeScript
+## 🚀 Tech Stack
 
-Фреймворк для E2E-тестирования: Playwright
+*   **Language:** TypeScript
+*   **Testing Framework:** Playwright
+*   **Test Runner:** Built-in Playwright Test Runner
+*   **Reporting:** Allure Report
+*   **Browsers:** Chromium, Firefox, WebKit
 
-Запуск тестов: Поддержка Chromium, Firefox, WebKit
+## ✅ Key Features Tested
 
-Паттерн проектирования: Page Object Model (POM)
+This suite covers the core functionalities of an e-commerce platform:
 
-Управление зависимостями: npm / yarn
+*   **User Authentication:** Successful login and error handling for invalid credentials.
+*   **Product Management:** Adding and removing items from the shopping cart.
+*   **Cart Validation:** Accurate calculation of total item price and quantity.
+*   **End-to-End Checkout Process:** Complete validation of the purchase workflow (info, overview, completion).
+*   **Product Sorting:** Verification of all sorting filters (A-Z, Z-A, Price low-high, Price high-low).
 
-Система контроля версий: Git
+## 🏗️ Project Architecture
 
-Что было сделано:
+The suite is built with maintainability and scalability in mind using the **Page Object Model (POM)** pattern.
 
-Современный Tech Stack:
 
-Выбор Playwright вместо Selenium WebDriver обеспечивает большую скорость, надежность (встроенные ожидания элементов) и мощный функционал "из коробки" (мокирование, перехват запросов, генерация кода).
+## ✨ Highlights
 
-Использование TypeScript добавляет статическую типизацию, что повышает надежность кода, упрощает рефакторинг и автодополнение в IDE.
-
-Архитектура и поддерживаемость:
-
-Чистая и масштабируемая архитектура, построенная по паттерну Page Object Model (POM). Логика каждой страницы инкапсулирована в отдельные классы.
-
-Конфигурационные данные (логины, пароли, URL) вынесены в отдельные файлы для легкого управления тестовыми средами.
-
-Реализованные тест-кейсы (набор покрывает ключевой пользовательский поток):
-
-Тестирование логина: Успешная авторизация, обработка ошибок при невалидных credentials.
-
-Работа с товарами: Добавление/удаление товаров из корзины, проверка корректности подсчета общей стоимости.
-
-Оформление заказа (Checkout): Полное E2E-тестирование процесса покупки – от выбора товара до страницы подтверждения.
-
-Фильтрация и сортировка: Проверка работы всех видов сортировки товаров (от A до Z, по цене и т.д.).
+*   **High Stability:** Utilizes Playwright's built-in auto-waiting and intelligent tracing to eliminate flaky tests.
+*   **Cross-Browser Testing:** Fully configured to run tests on Chromium, Firefox, and WebKit.
+*   **Parallel Execution:** Tests are configured to run in parallel for faster execution.
+*   **Type Safety:** Built with TypeScript for better developer experience and fewer runtime errors.
+*   **Powerful Tooling:** Includes Playwright's UI Mode for easy debugging and insightful HTML reports.
+*   **Advanced Reporting:** Integrated with Allure Framework for detailed and interactive test reports with screenshots, traces, and video recordings.
